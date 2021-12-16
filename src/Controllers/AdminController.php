@@ -20,19 +20,17 @@ class AdminController extends Controller
     public function loadPage()
     {
         $this->pageData['title'] = "Admin";
-
+        
         $this->listenButtons();
 
-        $this->email = $_SESSION['email-search'];
-        $this->sort = $_SESSION['sort'];
-        $this->filter = $_SESSION['filter'];
-        
-        $this->displayEmail();
+        $_SESSION['emails'] = $this->model->getEmails($_SESSION['email-search'], $_SESSION['sort'], $_SESSION['filter']);
 
-        $this->pageData['emails'] = $this->emails;
+        $this->displayEmail();
+        
         $this->pageData['domains'] = $this->model->getDomains();
 
         $this->view->render($this->pageTpl, $this->pageData);
+
     }
 
     private function listenButtons() 
@@ -40,6 +38,8 @@ class AdminController extends Controller
         if (isset($_POST['search'])) {
             if ($_POST['email'] != '') {
                 $_SESSION['email-search'] = $_POST['email'];
+            } else {
+                $_SESSION['email-search'] = '%';
             }
             $_SESSION['sort'] = $_POST['sort'];
             $_SESSION['filter'] = $_POST['filter'];
@@ -56,23 +56,21 @@ class AdminController extends Controller
 
     private function displayEmail()
     {
-        $this->emails = $this->model->getEmails($this->email, $this->sort, $this->filter);
-
-        $pages = ceil(count($this->emails) / $this->emailsPerPage);
+        $emails = $_SESSION['emails'];
+        $pages = ceil(count($emails) / $this->emailsPerPage);
 
         if ($_GET['page'] == '' || $_GET['page'] <= 1) $page = 1;
         elseif ($_GET['page'] >= $pages) $page = $pages;
         else $page = $_GET['page'];
 
-        $this->pageData['pagination'] = $this->utils->drawPagination(count($this->emails), $this->emailsPerPage);
+        $this->pageData['pagination'] = $this->utils->drawPagination(count($emails), $this->emailsPerPage);
 
-        $this->emails = array_slice($this->emails, ($page - 1) * $this->emailsPerPage, $this->emailsPerPage);
+        $this->pageData['emails'] = array_slice($emails, ($page - 1) * $this->emailsPerPage, $this->emailsPerPage);
     }
 
     private function saveCSV()
     {
-        $emails = $this->model->getEmails($this->email, $this->sort, $this->filter);
-
+        $emails = $_SESSION['emails'];
         $delimeter = ";";
         $filename = "subscriptions_" . date('Y-m-d') . ".csv";
 

@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-    <form method="post">
+    <form action="?page=1" method="post">
         <ul class="search">
             <li><input type="text" name="email" placeholder="Search email"></li>
             <li><label for="sort">Sort: </label>
@@ -29,7 +29,7 @@
                 }
                 ?>
             </select></li>
-            <li><button name="search" type="submit">Search</button></li>
+            <li><a href="?page=1"><button name="search" type="submit">Search</button></a></li>
             </ul>
         
         <table>

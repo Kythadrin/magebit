@@ -69,6 +69,7 @@ class IndexController extends Controller
             $errors = true;
         }
 
+        
         if ($checkbox == false) {
             $this->errors['checkbox'] = 'You must accept the terms and conditions.';
             $errors = true;
