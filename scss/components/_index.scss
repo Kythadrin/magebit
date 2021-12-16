@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    color: #131821;
+
+
+    &:hover {
+        color: colors.$blue;
+    }
+
+    &:active {
+        color: #233759;
+    }
+}
+
+h1 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    color: colors.$black;
+}
+
+h2 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: colors.$grey;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100%
+}
+
+#app {
+    width: 1920px;
+    background-image: url('../images/pineapple.jpg');
+    background-repeat: no-repeat;
+    background-position-x: 680px;
+}
+
+.content {
+    padding: 100px;
+    width: 680px;
+    background: colors.$gradient;
+}
+
+@media only screen and (max-width: 375px) {
+    #app {
+        background-image: url(../images/pineapple_mobile.jpg);
+        background-position-x: left;
+        background-position-y: 66px;
+        height: 812px;
+    }
+
+    .content {
+        background: transparent;
+        padding: 0;
+        width: 375px;
+    }
+}
