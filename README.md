@@ -1,16 +1,16 @@
 # **Magebit test task**
 
-> Content:
+## > Content:
   1. [About project](https://github.com/Kythadrin/magebit/README.md#8)
   2. [What was used in the project](https://github.com/Kythadrin/magebit/README.md#13)
   3. [How to start a project?](https://github.com/Kythadrin/magebit/README.md#23)
 
-> About project
+## > About project
   This project is a test task for Maghebit and consists of two pages.
     1. The first page is a subscription form. the user enters his email and agrees to the terms, after which a notification about a successful subscription is displayed and the entered email is saved to the database along with the date of the subscription.
     2. The second page includes viewing all subscribers with the ability to search by email, sort by date and email, and filter by mail domain. It is also possible to delete a record from the table and export the table to CSV.
 
-> What was used in the project
+## > What was used in the project
   - Visual Studio Code v1.63.1
   - OpenServer v5.4.0
   - PHP v7.4
@@ -20,7 +20,7 @@
   - PhpMyAdmin v5.1.0
   - SCSS v3.5.5
  
-> How to start a project?
+## >  How to start a project?
   1. Clone this repository or download them.
   2. Put project in server folder. I'm use OpenServer and this path to folder where need put project: *"C:\openserver\domains\"*. You can use some other server.
   3. Change project config. In */conf/Database.php* set database connection information(*set hostname, username, password and database name*).
