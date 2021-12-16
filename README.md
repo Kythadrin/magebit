@@ -7,8 +7,8 @@
 
 ## About project
   This project is a test task for Maghebit and consists of two pages.
-    1. The first page is a subscription form. the user enters his email and agrees to the terms, after which a notification about a successful subscription is displayed and the entered email is saved to the database along with the date of the subscription.
-    2. The second page includes viewing all subscribers with the ability to search by email, sort by date and email, and filter by mail domain. It is also possible to delete a record from the table and export the table to CSV.
+   1. The first page is a subscription form. the user enters his email and agrees to the terms, after which a notification about a successful subscription is displayed and the entered email is saved to the database along with the date of the subscription.
+   2. The second page includes viewing all subscribers with the ability to search by email, sort by date and email, and filter by mail domain. It is also possible to delete a record from the table and export the table to CSV.
 
 ## What was used in the project
   - Visual Studio Code v1.63.1
