@@ -1,9 +1,9 @@
 # **Magebit test task**
 
 ## Content:
-  1. [About project](https://github.com/Kythadrin/magebit/README.md#8)
-  2. [What was used in the project](https://github.com/Kythadrin/magebit/README.md#13)
-  3. [How to start a project?](https://github.com/Kythadrin/magebit/README.md#23)
+  1. [About project](https://github.com/Kythadrin/magebit/README.md#L8)
+  2. [What was used in the project](https://github.com/Kythadrin/magebit/README.md#L13)
+  3. [How to start a project?](https://github.com/Kythadrin/magebit/README.md#L23)
 
 ## About project
   This project is a test task for Maghebit and consists of two pages.
