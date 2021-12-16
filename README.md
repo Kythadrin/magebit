@@ -1,7 +1,7 @@
 # **Magebit test task**
 
 ## Content:
-  1. [About project](8)
+  1. [About project](#About project)
   2. [What was used in the project](https://github.com/Kythadrin/magebit/README.md#L13)
   3. [How to start a project?](https://github.com/Kythadrin/magebit/README.md#L23)
 
