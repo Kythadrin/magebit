@@ -1,6 +1,6 @@
 # **Magebit test task**
 
-## > Content:
+## Content:
   1. [About project](https://github.com/Kythadrin/magebit/README.md#8)
   2. [What was used in the project](https://github.com/Kythadrin/magebit/README.md#13)
   3. [How to start a project?](https://github.com/Kythadrin/magebit/README.md#23)
