@@ -24,7 +24,7 @@
   1. Clone this repository or download them.
   2. Put project in server folder. I'm use OpenServer and this path to folder where need put project: *"C:\openserver\domains\"*. You can use some other server.
   3. Change project config. In *[database config file](https://github.com/Kythadrin/magebit/blob/79372f8631c03dc3df90832c38f85f3d8008f65f/conf/Database.php#L5)* set database connection information(*set hostname, username, password and database name*).
-  4. Start server
+  4. Start server or restart.
   5. Open browser and write in the address bar data to connect. For OpenServer it is folder name of project, for others it is usually: *localhost*. 
-    1. For enter on main page needed write in the address bar domain name. For example: *http://magebit/* or *localhost*. 
-    2. For adminsitrator page needed enter domain-name/admin. For example: *http://magebit/admin* or *localhost/admin*.
+     - For enter on main page needed write in the address bar domain name. For example: *http://magebit/* or *localhost*. 
+     - For adminsitrator page needed enter domain-name/admin. For example: *http://magebit/admin* or *localhost/admin*.
