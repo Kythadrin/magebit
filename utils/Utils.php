@@ -10,6 +10,8 @@ class Utils {
         elseif ($_GET['page'] >= $pagesCount) $currentPage = $pagesCount;
         else $currentPage = $_GET['page'];
 
+        if ($pagesCount == 0) $pagesCount = 1;
+
         $pagination = '<div class="page-info"> Page ' . $currentPage . ' of ' . $pagesCount . '</div>';
 
         if ($pagesCount > 1) {
