@@ -30,8 +30,8 @@ class Route
             include CONTROLLER_PATH . $controllerName . ".php";
             include MODEL_PATH . $modelName . ".php";
         } catch (Exception $e) {
-            include ROOT . "/404page.php";
-            return 0;
+            $controllerName = "errorpageController";
+            include CONTROLLER_PATH . $controllerName . ".php";
         }
 
         if (isset($route[2]) && $route[2] != '') {

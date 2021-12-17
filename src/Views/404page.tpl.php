@@ -3,15 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="stylesheet" href="css/404page.css">
     <title>404 error</title>
-    <style>
-        .container{display: flex; flex-direction: column; margin-top: 200px;} 
-        h1{margin: 0 auto; font-size: 52px;}
-        p{margin: 0 auto;}
-    
-    </style>
 </head>
 <body>
 <div class="container">
