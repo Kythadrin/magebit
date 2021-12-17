@@ -30,7 +30,6 @@ class AdminController extends Controller
         $this->pageData['domains'] = $this->model->getDomains();
 
         $this->view->render($this->pageTpl, $this->pageData);
-
     }
 
     private function listenButtons() 
