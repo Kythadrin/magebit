@@ -10,8 +10,6 @@ class Route
 
         $route = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
-        $i = 0;
-
         for ($i = 0; $i < count($route); $i++) {
             if ($route[$i] != "") {
                 $controllerName = ucfirst($route[1]. "Controller");
