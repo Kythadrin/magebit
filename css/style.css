@@ -250,6 +250,10 @@ form button {
 }
 
 @media only screen and (max-width: 375px) {
+  .subscribtion {
+    padding-top: 20px;
+  }
+
   .subscription-form {
     margin: 188px 20px 0 20px;
     padding: 10px 20px;
