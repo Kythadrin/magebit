@@ -59,7 +59,7 @@ class IndexController extends Controller
                 $this->errors['regex'] = 'Please provide a valid e-mail address.';
                 $errors = true;
             } else {
-                if (!strrchr($email, '.') == '.co') {
+                if (strrchr($email, '.') == '.co') {
                     $this->errors['columbia'] = 'We are not accepting subscriptions from Colombia emails.';
                     $errors = true;
                 }
