@@ -28,3 +28,5 @@
   5. Open browser and write in the address bar data to connect. For OpenServer it is folder name of project, for others it is usually: *localhost*. 
      - For enter on main page needed write in the address bar domain name. For example: *http://magebit/* or *localhost*. 
      - For adminsitrator page needed enter domain-name/admin. For example: *http://magebit/admin* or *localhost/admin*.
+
+> Author: Vadims Sirics
