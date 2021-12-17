@@ -3,13 +3,11 @@
   }
   
 .description {
-  padding-left: 40px;
-  padding-bottom: 50px;
+  padding: 0 0 50px 40px;
 }
 
 .subscribtion {
-  padding-top: 105px;
-  padding-bottom: 50px;
+  padding: 105px 0 50px 0;
 }
 
 .subscription h2 {
@@ -54,12 +52,12 @@ form {
   }
 
   button {
-    width: 24px;
-    height: 14px;
+    width: 77px;
+    height: 67px;
     border: none;
     position: absolute;
-    right: 40px;
-    top: 28px;
+    right: 13.5px;
+    top: 1.5px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
