@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/svg+xml" href="images/logo.svg">
     <link rel="stylesheet" href="css/404page.css">
-    <title>404 error</title>
+    <title><?php echo $pageData['title'] ?></title>
 </head>
 <body>
 <div class="container">
