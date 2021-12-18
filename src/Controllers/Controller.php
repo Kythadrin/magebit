@@ -2,7 +2,7 @@
 
 abstract class Controller 
 {
-    public $view;
+    protected $view;
     protected $pageData = array();
     
     public function __construct()

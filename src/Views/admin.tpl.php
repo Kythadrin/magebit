@@ -21,7 +21,7 @@
                 <option value="email ASC">By email ASC</option>
             </select></li>
             <li><label for="filter">Filter: </label>
-            <select id="filter" name="filter">
+            <select name="filter">
                 <option value="%"> </option>
                 <?php 
                 foreach ($pageData['domains'] as $domain) {
@@ -30,8 +30,7 @@
                 ?>
             </select></li>
             <li><a href="?page=1"><button name="search" type="submit">Search</button></a></li>
-            </ul>
-        
+        </ul>
         <table>
             <tr>
                 <th>Email</th>

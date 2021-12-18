@@ -31,7 +31,7 @@ class IndexController extends Controller
         $this->view->render($this->pageTpl, $this->pageData);
     }
 
-    public function submitEmail()
+    private function submitEmail()
     {
         $this->model->setEmail($_POST['email']);
         $this->model->setDate(date("y-m-d"));
@@ -41,12 +41,12 @@ class IndexController extends Controller
             $this->model->saveToDatabase();
             return true;
         } else {
-            $this->errors['email-exist'] = 'This email already exist!';  
+            $this->pageData['email-exist'] = 'This email already subscribed!';  
             return false;
         }
     }
 
-    public function validateForm()
+    private function validateForm()
     {
         $email = trim($_POST['email']);
         $checkbox = $_POST['terms'];

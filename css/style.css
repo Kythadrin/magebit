@@ -215,6 +215,10 @@ form button {
   color: #6A707B;
 }
 
+.email-exist {
+  color: red;
+}
+
 .error {
   color: #E3E3E4;
   text-shadow: 0 0 2px #131821;

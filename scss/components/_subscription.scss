@@ -104,6 +104,10 @@ form {
   }
 }
 
+.email-exist {
+  color: red;
+}
+
 .error {
   color: colors.$light-grey;
   text-shadow: 0 0 2px colors.$black;

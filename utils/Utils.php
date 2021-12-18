@@ -6,9 +6,8 @@ class Utils {
         $pagesCount = ceil($totalItems / $perPage);
         $currentPage = $_GET['page'];
 
-        if ($_GET['page'] == '' || $_GET['page'] <= 1) $currentPage = 1;
-        elseif ($_GET['page'] >= $pagesCount) $currentPage = $pagesCount;
-        else $currentPage = $_GET['page'];
+        if ($currentPage == '' || $currentPage <= 1) $currentPage = 1;
+        elseif ($currentPage >= $pagesCount) $currentPage = $pagesCount;
 
         if ($pagesCount == 0) $pagesCount = 1;
 

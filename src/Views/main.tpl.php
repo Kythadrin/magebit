@@ -36,8 +36,12 @@
                     <h1>Subscribe to newsletter</h1>
                     <h2>Subscribe to our newsletter and get 10% discount on pineapple glasses.</h2>
                 </div>
-                
-                <form id="form" method="post">
+                <?php 
+                if (!empty($pageData['email-exist'])) {
+                    echo '<p class="email-exist">' . $pageData['email-exist'] . '</p>';
+                }
+                ?>
+                <form id="subscription-form" method="post">
                     <input name="email" ref="email" type="text" maxlength="254" placeholder="Type your email address here…" v-on:input="checkEmail" v-model.trim="email">
                     <button name="submit" type="submit" :disabled='canSubmit'>
                         <svg class="ic_arrow" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +51,7 @@
                 </form>
 
                 <div class="terms">
-                    <input id="terms" name="terms" type="checkbox" form="form" v-on:change="isChecked" v-model="terms">
+                    <input id="terms" name="terms" type="checkbox" form="subscription-form" v-on:change="isChecked" v-model="terms">
                     <label for="terms">I agree to <a href="#">terms of service</a></label>
                 </div>
 
