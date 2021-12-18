@@ -8,6 +8,8 @@ class Route
         $modelName = "IndexModel";
         $action = "loadPage";
 
+        session_start();
+        
         $route = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
         for ($i = 0; $i < count($route); $i++) {

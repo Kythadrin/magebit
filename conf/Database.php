@@ -2,20 +2,10 @@
 
 class Database
 {
-    const HOST = 'localhost';
-    const USER = 'root';
-    const PASSWORD = '';
-    const DBNAME = 'magebit';
-
     public static function connect()
     {
-        $host = self::HOST;
-        $user = self::USER;
-        $password = self::PASSWORD;
-        $dbname = self::DBNAME;
-
         try {
-            $connection = new PDO("mysql:host=$host; dbname=$dbname", $user, $password);
+            $connection = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASSWORD);
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             print $e->getMessage();
