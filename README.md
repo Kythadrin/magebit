@@ -3,7 +3,7 @@
 ## Content:
   1. About project
   2. What was used in the project
-  3. How to start a project?
+  3. How to launch project?
 
 ## About project
   This project is a test task for Maghebit and consists of two pages.
@@ -20,7 +20,7 @@
   - PhpMyAdmin v5.1.0
   - SCSS v3.5.5
  
-## How to start a project?
+## How to launch project?
   1. Clone this repository or download them.
   2. Put project in server folder. I'm use OpenServer and this path to folder where need put project: *"C:\openserver\domains\"*. You can use some other server.
   3. Change project config. In *[database config file](https://github.com/Kythadrin/magebit/blob/79372f8631c03dc3df90832c38f85f3d8008f65f/conf/Database.php#L5)* set database connection information(*set hostname, username, password and database name*).
