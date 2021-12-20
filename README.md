@@ -26,8 +26,8 @@
   3. Change project config. In *[database config](https://github.com/Kythadrin/magebit/blob/1112421e99fd482a8178ec2637946e9b66508fcc/conf/Config.php#L10)* set database connection information(*set hostname, username, password and database name*).
   4. Start server or restart.
   5. Open browser and write in the address bar data to connect. For OpenServer it is folder name of project, for others it is usually: *localhost*. 
-     - For enter on main page needed write in the address bar domain name. For example: *http://magebit/* or *localhost*. 
-     - For adminsitrator page needed enter domain-name/admin. For example: *http://magebit/admin* or *localhost/admin*.
+     - For enter on main page needed write in the address bar domain name. For example: *magebit/* or *localhost*. 
+     - For adminsitrator page needed enter domain-name/admin. For example: *magebit/admin* or *localhost/admin*.
 
 
 
