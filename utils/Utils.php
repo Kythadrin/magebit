@@ -50,7 +50,7 @@ class Utils {
                 $pagination .= pageButtons($pagesCount - 2, $pagesCount, $currentPage);
             }
 
-            $pagination .= '<li><a href="?page=' . $next_page . '">Next</a></li>';
+            $pagination .= '<li><a href="?page=' . $next_page . '">Next</a></li></ul>';
         }
 
         return $pagination;
