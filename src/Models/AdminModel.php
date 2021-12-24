@@ -16,7 +16,7 @@ class AdminModel extends Model
 
     public function getDomains()
     {
-        $sql = "SELECT SUBSTR(email, INSTR(email, '@') + 1) as 'domain' FROM `subscriptions` GROUP BY SUBSTR(email, INSTR(email, '@') + 1)";
+        $sql = "SELECT SUBSTR(email, INSTR(email, '@') + 1) AS 'domain' FROM `subscriptions` GROUP BY SUBSTR(email, INSTR(email, '@') + 1)";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
