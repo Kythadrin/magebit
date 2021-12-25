@@ -23,11 +23,10 @@ var app = new Vue({
         checkEmail() {
             if (this.email.length > 0) {
                 this.errors[1].display = false;
+                this.validateEmail();
             } else {
                 this.errors[1].display = true;
             } 
-
-            this.validateEmail();
         },
         validateEmail() {
             const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,3}$/;
