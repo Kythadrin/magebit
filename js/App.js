@@ -25,7 +25,6 @@ var app = new Vue({
                 this.errors[1].display = false;
             } else {
                 this.errors[1].display = true;
-                this.errorsp[3].display = true;
             } 
 
             this.validateEmail();
