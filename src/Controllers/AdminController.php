@@ -3,7 +3,7 @@
 class AdminController extends Controller 
 {
     private $pageTpl = '/src/Views/admin.tpl.php';
-    private $emailsPerPage = 5;
+    private $emailsPerPage = 10;
     private $model;
 
     public function __construct()
