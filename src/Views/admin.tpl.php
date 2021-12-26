@@ -35,6 +35,7 @@
             <tr>
                 <th>Email</th>
                 <th>Date</th>
+                <th>Export</th>
             </tr>
             <?php 
             foreach ($pageData['emails'] as $email) {
@@ -42,6 +43,7 @@
                 <tr>
                     <td>'.$email["email"].'</td>
                     <td>'.$email["date"].'</td>
+                    <td><input type="checkbox" value="'.$email['email'].'" name="checkbox[]"></td>
                 </tr>';
             }
             ?>

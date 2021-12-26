@@ -69,7 +69,6 @@ class AdminController extends Controller
 
     private function saveCSV()
     {
-        $emails = $_SESSION['emails'];
         $delimeter = ";";
         $filename = "subscriptions_" . date('Y-m-d') . ".csv";
 
@@ -78,8 +77,9 @@ class AdminController extends Controller
         $fields = array('Email', 'Date');
         fputcsv($f, $fields, $delimeter);
 
-        foreach ($emails as $email) {
-            $data = array($email['email'], $email['date']);
+        foreach ($_POST['checkbox'] as $email) {
+            $record = $this->model->getEmail($email);
+            $data = array($record['email'], $record['date']);
             fputcsv($f, $data, $delimeter);
         }
 
